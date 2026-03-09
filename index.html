@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Karen ❤️ Rafa</title>
+
+<style>
+
+body{
+margin:0;
+background:black;
+font-family:Arial;
+text-align:center;
+color:white;
+overflow:hidden;
+}
+
+/* MATRIX */
+
+#matrix{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+/* TITULO */
+
+h1{
+color:#6db7ff;
+font-size:60px;
+margin-top:20px;
+}
+
+#contador{
+color:#00f7ff;
+font-size:28px;
+font-weight:bold;
+text-shadow:0 0 10px #00f7ff;
+}
+
+/* CORAZON GRANDE */
+
+.bigHeart{
+font-size:200px;
+color:red;
+margin-top:40px;
+animation:latido 1.2s infinite;
+position:relative;
+display:inline-block;
+}
+
+@keyframes latido{
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
+}
+
+/* TEXTO DEL CORAZON */
+
+.heartText{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+width:200px;
+line-height:1.2;
+font-weight:bold;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-shadow:0 0 10px white;
+}
+
+/* COLORES BONITOS */
+
+.line1{
+font-size:18px;
+color:#ffd700;
+}
+
+.line2{
+font-size:20px;
+color:#00ffff;
+text-shadow:0 0 10px #00ffff;
+}
+
+.line3{
+font-size:18px;
+color:#ff9dfc;
+}
+
+.line4{
+font-size:26px;
+color:white;
+text-shadow:0 0 15px #ff4d6d;
+}
+
+/* CORAZONES FLOTANDO */
+
+.floatHeart{
+position:fixed;
+bottom:-20px;
+font-size:22px;
+animation:subir linear infinite;
+}
+
+@keyframes subir{
+0%{transform:translateY(0);opacity:1;}
+100%{transform:translateY(-110vh);opacity:0;}
+}
+
+/* CARTA */
+
+.envelope{
+width:230px;
+height:130px;
+background:#ddd;
+margin:40px auto;
+border-radius:6px;
+cursor:pointer;
+animation:flotar 2s infinite;
+position:relative;
+}
+
+@keyframes flotar{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+.envelope:before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+border-left:115px solid transparent;
+border-right:115px solid transparent;
+border-top:65px solid #bbb;
+}
+
+/* MENSAJE */
+
+.carta{
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+color:black;
+padding:40px;
+width:420px;
+border-radius:10px;
+box-shadow:0 0 30px black;
+}
+
+</style>
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+
+<h1>Feliz Aniversario ❤️</h1>
+
+<p>Desde el 9 de Octubre de 2025 empezó nuestra historia</p>
+
+<div id="contador"></div>
+
+<!-- CORAZON -->
+
+<div class="bigHeart">
+
+❤️
+
+<div class="heartText">
+
+<span class="line1">De parte de</span>
+<span class="line2">tu niño Rafa ❤️</span>
+<span class="line3">para mi niña hermosa</span>
+<span class="line4">Karen</span>
+
+</div>
+
+</div>
+
+
+
+<div class="envelope" onclick="abrirCarta()"></div>
+
+<div class="carta" id="mensaje">
+
+<h2>Una carta de parte de mí 💌</h2>
+
+<p>
+
+Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.
+Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.
+Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.
+Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.Karen ❤️  
+
+Eres la persona más hermosa que llegó a mi vida.  
+Gracias por cada sonrisa, cada momento y cada recuerdo.
+
+Te amo muchísimo mi niña hermosa.
+
+Con amor,  
+Tu niño Rafa.
+
+</p>
+
+</div>
+
+<script>
+
+/* CONTADOR TIEMPO REAL */
+
+const inicio = new Date("Oct 9, 2025 00:00:00");
+
+function contador(){
+
+let ahora = new Date();
+let diff = ahora - inicio;
+
+let dias = Math.floor(diff/(1000*60*60*24));
+let horas = Math.floor((diff/(1000*60*60))%24);
+let minutos = Math.floor((diff/(1000*60))%60);
+let segundos = Math.floor((diff/1000)%60);
+
+document.getElementById("contador").innerHTML =
+"❤️ Llevamos juntos: "
++ dias+" días "
++ horas+" horas "
++ minutos+" minutos "
++ segundos+" segundos";
+
+}
+
+setInterval(contador,1000);
+
+/* CARTA */
+
+function abrirCarta(){
+document.getElementById("mensaje").style.display="block";
+}
+
+/* CORAZONES */
+
+function corazones(){
+
+let heart=document.createElement("div");
+
+heart.className="floatHeart";
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(Math.random()*3+3)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),6000);
+
+}
+
+setInterval(corazones,400);
+
+/* MATRIX */
+
+const canvas=document.getElementById("matrix");
+const ctx=canvas.getContext("2d");
+
+canvas.height=window.innerHeight;
+canvas.width=window.innerWidth;
+
+const letras=[
+"K","R","R ♥ K",
+"♐","♑",
+"TE AMO MI NIÑA"
+];
+
+const fontSize=16;
+const columnas=canvas.width/fontSize;
+
+const drops=[];
+
+for(let x=0;x<columnas;x++) drops[x]=1;
+
+function draw(){
+
+ctx.fillStyle="rgba(0,0,0,0.05)";
+ctx.fillRect(0,0,canvas.width,canvas.height);
+
+ctx.fillStyle="#ff4d6d";
+ctx.font=fontSize+"px monospace";
+
+for(let i=0;i<drops.length;i++){
+
+let text=letras[Math.floor(Math.random()*letras.length)];
+
+ctx.fillText(text,i*fontSize,drops[i]*fontSize);
+
+if(drops[i]*fontSize>canvas.height && Math.random()>0.975)
+drops[i]=0;
+
+drops[i]++;
+
+}
+
+}
+
+setInterval(draw,35);
+
+</script>
+
+</body>
+</html>
